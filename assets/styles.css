@@ -151,6 +151,11 @@ main {
 }
 
 @media only screen and (max-width: 957px) {
+  .nav-bar {
+    position: absolute;
+    top: 120px;
+    right: 5px;
+  }
   .study-guide {
     width: 485px;
     height: 320px;
