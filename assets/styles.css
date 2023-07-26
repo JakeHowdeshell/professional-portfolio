@@ -79,7 +79,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .content-cm ul {
   display: flex;
@@ -119,12 +119,14 @@ main {
 .study-guide {
   position: relative;
   display: flex;
+  justify-content: space-around;
   width: 685px;
   height: 550px;
 }
 
 .challenge,
-.cheatsheet {
+.cheatsheet,
+.project {
   position: relative;
   display: flex;
   width: 380px;
@@ -137,7 +139,8 @@ main {
     height: 400px;
   }
   .challenge,
-  .cheatsheet {
+  .cheatsheet,
+  .project {
     width: 280px;
     height: 160px;
   }
@@ -161,7 +164,8 @@ main {
     height: 320px;
   }
   .challenge,
-  .cheatsheet {
+  .cheatsheet,
+  .project {
     width: 205px;
     height: 140px;
   }
@@ -176,18 +180,21 @@ main {
 
 .study-guide h3,
 .challenge h3,
-.cheatsheet h3 {
+.cheatsheet h3,
+.project h3 {
   position: absolute;
   bottom: 40px;
   background-color: var(--text-color);
   color: aliceblue;
   height: 30px;
+  width: fit-content;
   padding: 10px;
 }
 
 .study-guide a,
 .challenge a,
-.cheatsheet a {
+.cheatsheet a,
+.project a {
   background-color: var(--text-color);
   padding: 5px;
   margin-top: 10px;
@@ -198,13 +205,16 @@ main {
 .challenge a:hover,
 .challenge a:hover h3,
 .cheatsheet a:hover,
-.cheatsheet a:hover h3 {
+.cheatsheet a:hover h3,
+.project a:hover,
+.project a:hover h3 {
   background-color: blueviolet;
 }
 
 .study-guide img,
 .challenge img,
-.cheatsheet img {
+.cheatsheet img,
+.project img {
   height: 100%;
   width: 100%;
 }
