@@ -116,7 +116,7 @@ main {
 }
 
 /* Work Section Styles */
-.study-guide {
+.project2 {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -126,21 +126,23 @@ main {
 
 .challenge,
 .cheatsheet,
-.project {
+.project,
+.study-guide {
   position: relative;
   display: flex;
   width: 380px;
-  height: 200px;
+  height: 215px;
 }
 
 @media only screen and (max-width: 1137px) {
-  .study-guide {
+  .project2 {
     width: 550px;
     height: 400px;
   }
   .challenge,
   .cheatsheet,
-  .project {
+  .project,
+  .study-guide {
     width: 280px;
     height: 160px;
   }
@@ -159,13 +161,14 @@ main {
     top: 120px;
     right: 5px;
   }
-  .study-guide {
+  .project2 {
     width: 485px;
     height: 320px;
   }
   .challenge,
   .cheatsheet,
-  .project {
+  .project,
+  .study-guide {
     width: 205px;
     height: 140px;
   }
@@ -178,10 +181,11 @@ main {
   }
 }
 
-.study-guide h3,
+.project2 h3,
 .challenge h3,
 .cheatsheet h3,
-.project h3 {
+.project h3,
+.study-guide h3 {
   position: absolute;
   bottom: 40px;
   background-color: var(--text-color);
@@ -191,30 +195,34 @@ main {
   padding: 10px;
 }
 
-.study-guide a,
+.project2 a,
 .challenge a,
 .cheatsheet a,
-.project a {
+.project a,
+.study-guide a{
   background-color: var(--text-color);
   padding: 5px;
   margin-top: 10px;
 }
 
-.study-guide a:hover,
-.study-guide a:hover h3,
+.project2 a:hover,
+.project2 a:hover h3,
 .challenge a:hover,
 .challenge a:hover h3,
 .cheatsheet a:hover,
 .cheatsheet a:hover h3,
 .project a:hover,
-.project a:hover h3 {
+.project a:hover h3,
+.study-guide a:hover,
+.study-guide a:hover h3 {
   background-color: blueviolet;
 }
 
-.study-guide img,
+.project2 img,
 .challenge img,
 .cheatsheet img,
-.project img {
+.project img 
+.study-guide img{
   height: 100%;
   width: 100%;
 }
